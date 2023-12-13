@@ -1,0 +1,67 @@
+{
+    "questions": [
+        {
+            "questionText": "Which method is used to render a React component to the DOM?",
+            "options": [
+                {
+                    "text": "renderComponent()",
+                    "correct": false
+                },
+                {
+                    "text": "ReactDOM.render()",
+                    "correct": true
+                },
+                {
+                    "text": "React.render()",
+                    "correct": false
+                },
+                {
+                    "text": "component.render()",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionText": "What is the purpose of the useEffect hook in React?",
+            "options": [
+                {
+                    "text": "To perform side effects in functional components.",
+                    "correct": true
+                },
+                {
+                    "text": "To handle component re-renders.",
+                    "correct": false
+                },
+                {
+                    "text": "To add state to functional components.",
+                    "correct": false
+                },
+                {
+                    "text": "To handle form submissions in React applications.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionText": "How can you access form input values in React.js?",
+            "options": [
+                {
+                    "text": "By using the useRef hook and the current property",
+                    "correct": false
+                },
+                {
+                    "text": "By using the useState hook and setting the initial value",
+                    "correct": false
+                },
+                {
+                    "text": "By using the document.getElementById() method",
+                    "correct": false
+                },
+                {
+                    "text": "By using the event.target.value property",
+                    "correct": true
+                }
+            ]
+        }
+    ]
+}

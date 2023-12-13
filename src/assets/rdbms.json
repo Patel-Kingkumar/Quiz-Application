@@ -1,0 +1,67 @@
+{
+    "questions": [
+        {
+            "questionText": "What is an RDBMS? ",
+            "options": [
+                {
+                    "text": "Database that stores data elements that are not linked",
+                    "correct": false
+                },
+                {
+                    "text": "Database that accesses data elements that are not linked",
+                    "correct": false
+                },
+                {
+                    "text": "Database that stores and allows access to data elements that are linked",
+                    "correct": true
+                },
+                {
+                    "text": "None of the mentioned",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionText": "Which of the following commands do we use to delete a relation (RDBMS) from a database?",
+            "options": [
+                {
+                    "text": "delete table RDBMS",
+                    "correct": false
+                },
+                {
+                    "text": "drop table RDBMS",
+                    "correct": true
+                },
+                {
+                    "text": "delete from RDBMS",
+                    "correct": false
+                },
+                {
+                    "text": "drop relation RDBMS",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionText": "How can you access form input values in React.js? ",
+            "options": [
+                {
+                    "text": "By using the useRef hook and the current property",
+                    "correct": false
+                },
+                {
+                    "text": "By using the useState hook and setting the initial value",
+                    "correct": false
+                },
+                {
+                    "text": "By using the document.getElementById() method",
+                    "correct": false
+                },
+                {
+                    "text": "By using the event.target.value property",
+                    "correct": true
+                }
+            ]
+        }
+    ]
+}

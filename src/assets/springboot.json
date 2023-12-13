@@ -1,0 +1,67 @@
+{
+    "questions": [
+        {
+            "questionText": "Spring Boot is used for developing?",
+            "options": [
+                {
+                    "text": "Web applications",
+                    "correct": false
+                },
+                {
+                    "text": "Distributed applications (Restful web services)",
+                    "correct": false
+                },
+                {
+                    "text": "Microservices",
+                    "correct": false
+                },
+                {
+                    "text": "All of the above",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "questionText": "Which Spring annotation is used to create RESTful web services using Spring MVC?",
+            "options": [
+                {
+                    "text": "@RestController",
+                    "correct": true
+                },
+                {
+                    "text": "@Controller",
+                    "correct": false
+                },
+                {
+                    "text": "@Component",
+                    "correct": false
+                },
+                {
+                    "text": "@Rest",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionText": "Which is the default implementation class of the JpaRepository interface?",
+            "options": [
+                {
+                    "text": "SimpleJpaRepository class",
+                    "correct": true
+                },
+                {
+                    "text": "JpaRepositoryImpl class",
+                    "correct": false
+                },
+                {
+                    "text": "CustomJpaRepository class",
+                    "correct": false
+                },
+                {
+                    "text": "DefaultJpaRepository class",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

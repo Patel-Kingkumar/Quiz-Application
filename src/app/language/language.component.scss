@@ -1,0 +1,17 @@
+.language {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    .main {        
+        .card {
+            width: 18rem;
+            .card-img-top {
+                max-height: 130px;
+                object-fit: contain;
+            }
+        }
+    }
+}

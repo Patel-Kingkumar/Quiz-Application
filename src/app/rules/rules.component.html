@@ -1,0 +1,19 @@
+<div class="rules">    
+    <h3 class="text-center">Rules</h3>
+    <h3 class="text-center"></h3>
+    <div class="rules-data">
+        <div class="one">
+            <p><b>Name</b></p>
+            <p><b>Right Answer</b></p>
+            <p><b>Wrong Answer</b></p>
+            <p><b>Skip Question</b></p>
+        </div>
+        <div class="two">
+            <p><input type="text" class="form-control name" name="name" id="name" [(ngModel)]="name" placeholder="Enter Name"></p>
+            <p>10 points</p>
+            <p>-10 points</p>
+            <p>0 points</p>
+        </div>
+    </div>
+    <button class="btn btn-primary" (click)="start()" [disabled]="!name">Start Quiz</button>
+</div>

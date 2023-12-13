@@ -1,0 +1,59 @@
+<ng-container *ngIf="!dispResult">
+    <div class="mt-5 main-question">
+        <div class="mt-5 px-3 py-4 text-timer">
+            <h3 class="text">{{ allQuestion[currentQuestion]?.questionText }}</h3>            
+            <h5 class="timer">Remain Time : {{ timer }}</h5>
+        </div>
+        <ul class="option" *ngFor="let option of allQuestion[currentQuestion]?.options">            
+            <li class="mt-2">
+                <button class="px-3 py-4 ans-opt" [disabled]="answerDisable" (click)="answer(currentQuestion + 1, option)" [ngClass]="{ 'selected': option.text == selectedOption, 'rightAns': option.text == rightAnswer }">
+                    {{ option.text }}
+                </button>
+            </li>
+        </ul>
+
+        <div class="wrong-ans">
+            <p class="text-success fw-semibold fs-5 mx-3">{{ rightAnswer }}</p>
+            <p class="text-primary fw-semibold fs-5 mx-3" *ngIf="rightAnswer">Next Question : {{ minTimer }}</p>
+        </div>
+
+        <div class="btns">
+            <button class="btn btn-outline-primary mx-3 prev-btn" (click)="prevQuestion()" [disabled]="currentQuestion === 0">
+                Previous 
+            </button>
+
+            <p class="fw-semibold fs-4">
+                {{ currentQuestion + 1 }} / {{ this.allQuestion.length }}
+            </p>
+
+            <button class="btn btn-outline-success skip-btn mx-3" (click)="skipQuestion()" [disabled]="skipDisable">
+                Skip
+            </button>
+
+        </div>
+    </div>
+</ng-container>
+
+
+<ng-container *ngIf="dispResult">
+    <div class="res">
+        <h3 class="text-center">Hey....! {{ name }} Your Result is : </h3>
+        <div class="data">
+            <div class="one">
+                <p><b>Total Score</b></p>
+                <p><b>Total Correct Question</b></p>
+                <p><b>Total Wrong Question</b></p>
+                <p><b>Total Skip Question</b></p>
+                <p><b>Total Questions Attempt</b></p>
+            </div>
+            <div class="two">
+                <p>{{ points }} Points </p>
+                <p>{{ correctAnswer }} </p>
+                <p>{{ incorrectAnswer }} </p>
+                <p>{{ skipAnswer }} </p>
+                <p>{{ questionAttempt }}</p>
+            </div>
+        </div>
+        <button class="btn btn-outline-primary" (click)="redirectHome()">Go Home</button>
+    </div>
+</ng-container>

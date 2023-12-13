@@ -1,0 +1,67 @@
+{
+    "questions": [
+        {
+            "questionText": "Which character is used in Python to make a single line comment?",
+            "options": [
+                {
+                    "text": "#",
+                    "correct": true
+                },
+                {
+                    "text": "//",
+                    "correct": false
+                },
+                {
+                    "text": "!",
+                    "correct": false
+                },
+                {
+                    "text": "/",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionText": "Which of the following declarations is incorrect?",
+            "options": [
+                {
+                    "text": "_x = 2",
+                    "correct": false
+                },
+                {
+                    "text": "__x = 3",
+                    "correct": false
+                },
+                {
+                    "text": "__xyz__ = 5",
+                    "correct": false
+                },
+                {
+                    "text": "None of these",
+                    "correct": true
+                }
+            ]
+        },        
+        {
+            "questionText": "Which of the following functions is a built-in function in python language?",
+            "options": [
+                {
+                    "text": "val()",
+                    "correct": false
+                },
+                {
+                    "text": "print()",
+                    "correct": true
+                },
+                {
+                    "text": "sacnf()",
+                    "correct": false
+                },
+                {
+                    "text": "None of these",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

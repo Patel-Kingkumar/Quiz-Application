@@ -1,0 +1,67 @@
+{
+    "questions": [
+        {
+            "questionText": "HTML stands for -",
+            "options": [
+                {
+                    "text": "Hyper Text Markup Language",
+                    "correct": true
+                },
+                {
+                    "text": "High Text Machine Language",
+                    "correct": false
+                },
+                {
+                    "text": "Hyper Text and links Markup Language",
+                    "correct": false
+                },
+                {
+                    "text": "None of these",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionText": "The correct sequence of HTML tags for starting a webpage is -",
+            "options": [
+                {
+                    "text": "Head, Title, HTML, body",
+                    "correct": false
+                },
+                {
+                    "text": "HTML, Body, Title, Head",
+                    "correct": false
+                },
+                {
+                    "text": "HTML, Title, Head, Body",
+                    "correct": false
+                },
+                {
+                    "text": "HTML, Head, Title, Body",
+                    "correct": true
+                }
+            ]
+        },        
+        {
+            "questionText": "Which of the following element is responsible for making the text bold in HTML?",
+            "options": [
+                {
+                    "text": "<pre>",
+                    "correct": false
+                },
+                {
+                    "text": "<b>",
+                    "correct": true
+                },
+                {
+                    "text": "<a>",
+                    "correct": false
+                },
+                {
+                    "text": "<br>",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

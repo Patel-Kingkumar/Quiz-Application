@@ -1,0 +1,67 @@
+{
+    "questions": [
+        {
+            "questionText": "Which of the following is an immediate subclass of the Panel class?",
+            "options": [
+                {
+                    "text": "Applet class",
+                    "correct": true
+                },
+                {
+                    "text": "Window class",
+                    "correct": false
+                },
+                {
+                    "text": "Frame class",
+                    "correct": false
+                },
+                {
+                    "text": "Dialog class",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "questionText": "Which option is false about the final keyword?",
+            "options": [
+                {
+                    "text": "A final method cannot be overridden in its subclasses.",
+                    "correct": false
+                },
+                {
+                    "text": "A final class cannot be extended.",
+                    "correct": false
+                },
+                {
+                    "text": "A final method can be inherited.",
+                    "correct": false
+                },
+                {
+                    "text": "A final class cannot extend other classes.",
+                    "correct": true
+                }
+            ]
+        },        
+        {
+            "questionText": "Which of these classes are the direct subclasses of the Throwable class?",
+            "options": [
+                {
+                    "text": "IOException and VirtualMachineError class",
+                    "correct": false
+                },
+                {
+                    "text": "Error and Exception class",
+                    "correct": true
+                },
+                {
+                    "text": "Exception and VirtualMachineError class",
+                    "correct": false
+                },
+                {
+                    "text": "RuntimeException and Error class",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

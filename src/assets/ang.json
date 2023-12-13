@@ -1,0 +1,68 @@
+{
+  "questions": [
+    {
+        "questionText": "Among the following which is not built-in a pipe in angular?",
+        "options": [
+            {
+                "text": "CurrencyPipe",
+                "correct": false
+            },
+            {
+                "text": "PercentPipe",
+                "correct": false
+            },
+            {
+                "text": "DataPipe",
+                "correct": true
+            },
+            {
+                "text": "None of these",
+                "correct": false
+            }
+        ]
+    },         
+    {
+        "questionText": "What purpose does the ngModel directive serve?",
+        "options": [
+            {
+                "text": "Handling HTTP requests",
+                "correct": false
+            },
+            {
+                "text": "Data binding for both input and output",
+                "correct": true
+            },
+            {
+                "text": "Listening to DOM events",
+                "correct": false
+            },
+            {
+                "text": "Controlling animation",
+                "correct": false
+            }
+        ]
+    },         
+    {
+        "questionText": "Which command is used to install Angular CLI globally?",
+        "options": [
+            {
+                "text": "npm install @angular/cli",
+                "correct": false
+            },
+            {
+                "text": "npm global install @angular/cli",
+                "correct": false
+            },
+            {
+                "text": "npm install -g @angular/cli",
+                "correct": true
+            },
+            {
+                "text": "npm --install @angular/cli",
+                "correct": false
+            }
+        ]
+    } 
+      
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "questions": [
+    {
+        "questionText": "What is the basic purpose of the toLocateString() method?",
+        "options": [
+            {
+                "text": "It returns a localised object representation",
+                "correct": false
+            },
+            {
+                "text": "It returns a localized string representation of the object",
+                "correct": true
+            },
+            {
+                "text": "It return a local time in the string format",
+                "correct": false
+            },
+            {
+                "text": "It return a parsed string",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "questionText": "In JavaScript, what is a block of statement?",
+        "options": [
+            {
+                "text": "Conditional block",
+                "correct": false
+            },
+            {
+                "text": "both conditional block and a single statement",
+                "correct": false
+            },
+            {
+                "text": "block that combines a number of statements into a single compound statement",
+                "correct": true
+            },
+            {
+                "text": "block that contains a single statement",
+                "correct": false
+            }
+        ]
+    },     
+    {
+        "questionText": "For which purpose the array map() methods is used ?",
+        "options": [
+            {
+                "text": "It used for mapping the elements of another array into itself.",
+                "correct": false
+            },
+            {
+                "text": "It passes each data-item of the array and returns the necessary mapped elements.",
+                "correct": false
+            },
+            {
+                "text": "It passes the data-items of an array into another array.",
+                "correct": false
+            },
+            {
+                "text": "It passes every element of the array on which it is invoked to the function you specify, and returns an array containing the values returned by that function.",
+                "correct": true
+            }
+        ]
+    }  
+  ]
+}

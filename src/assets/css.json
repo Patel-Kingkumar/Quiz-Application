@@ -1,0 +1,68 @@
+{
+  "questions": [
+    {
+        "questionText": "CSS stands for -",
+        "options": [
+            {
+                "text": "Cascade Style Sheets",
+                "correct": false
+            },
+            {
+                "text": "Color and Style Sheets",
+                "correct": false
+            },
+            {
+                "text": "Cascading Style Sheets",
+                "correct": true
+            },
+            {
+                "text": "None of these",
+                "correct": false
+            }
+        ]
+    },         
+    {
+        "questionText": "Which of the following is the correct syntax for referring the external style sheet?",
+        "options": [
+            {
+                "text": "<style src = example.css>",
+                "correct": false
+            },
+            {
+                "text": "<link rel=stylesheet type=text/css href=example.css>",
+                "correct": true
+            },
+            {
+                "text": "<stylesheet> example.css </stylesheet>",
+                "correct": false
+            },
+            {
+                "text": "None of these",
+                "correct": false
+            }
+        ]
+    },         
+    {
+        "questionText": "The property in CSS used to change the background color of an element is -",
+        "options": [
+            {
+                "text": "bgcolor",
+                "correct": false
+            },
+            {
+                "text": "color",
+                "correct": false
+            },
+            {
+                "text": "background-color",
+                "correct": true
+            },
+            {
+                "text": "All of the above",
+                "correct": false
+            }
+        ]
+    } 
+      
+  ]
+}

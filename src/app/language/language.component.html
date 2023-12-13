@@ -1,0 +1,12 @@
+<div class="language mt-5">
+    <div class="main" *ngFor="let item of languages">
+        <div class="card">
+            <img src="{{ item.image }}" class="card-img-top mt-3" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{ item.name | uppercase }}</h5>
+                <p class="card-text">{{ item.description }} Technology</p>
+                <a class="btn btn-primary" (click)="goQuiz(item.name)">Start {{ item.name | uppercase }} Quiz</a>
+            </div>
+        </div>
+    </div>
+</div>

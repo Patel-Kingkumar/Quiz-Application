@@ -1,0 +1,68 @@
+{
+    "questions": [
+      {
+          "questionText": "ADB stands for -",
+          "options": [
+              {
+                  "text": "Android Debug Bridge",
+                  "correct": true
+              },
+              {
+                  "text": "Android Delete Bridge",
+                  "correct": false
+              },
+              {
+                  "text": "Android Destroy Bridge",
+                  "correct": false
+              },
+              {
+                  "text": "None of these",
+                  "correct": false
+              }
+          ]
+      },         
+      {
+          "questionText": "Which of the following is the first callback method that is invoked by the system during an activity life-cycle?",
+          "options": [
+              {
+                  "text": "onClick() method",
+                  "correct": false
+              },
+              {
+                  "text": "onCreate() method",
+                  "correct": true
+              },
+              {
+                  "text": "onStart() method",
+                  "correct": false
+              },
+              {
+                  "text": "onRestart() method",
+                  "correct": false
+              }
+          ]
+      },         
+      {
+          "questionText": "In Android studio, which of the following callback is called when an activity starts interacting with the user?",
+          "options": [
+              {
+                  "text": "onDestroy",
+                  "correct": false
+              },
+              {
+                  "text": "onCreate",
+                  "correct": false
+              },
+              {
+                  "text": "onResume",
+                  "correct": true
+              },
+              {
+                  "text": "onStop",
+                  "correct": false
+              }
+          ]
+      } 
+        
+    ]
+  }
