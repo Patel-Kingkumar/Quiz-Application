@@ -12,15 +12,12 @@ export class RulesComponent implements OnInit {
   name: string = "";
 
   constructor(private router: Router, private questionService: QuestionService) { }
-  
+
   ngOnInit(): void {
-     localStorage.removeItem("user-name");
   }
 
   start() {
-    if (this.name != "") {
-      localStorage.setItem("user-name", this.name);
       this.router.navigate(["/language"]);
-    }
+
   }
 }

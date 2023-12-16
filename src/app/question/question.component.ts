@@ -9,7 +9,6 @@ import { QuestionService } from 'src/services/question.service';
   styleUrls: ['./question.component.scss']
 })
 export class QuestionComponent implements OnInit {
-  name: any = "";
   allQuestion: any = "";
   currentQuestion: number = 0;
   points: number = 0;
@@ -33,7 +32,6 @@ export class QuestionComponent implements OnInit {
   ngOnInit(): void {
     this.skipDisable = false;
     this.getAllQuestions();
-    this.name = localStorage.getItem("user-name");
   }
 
   getAllQuestions() {
@@ -151,7 +149,7 @@ export class QuestionComponent implements OnInit {
   }
 
   prevQuestion() {
-    this.minTimer = 5;    
+    this.minTimer = 5;
     this.answerDisable = true;
     this.currentQuestion--;
     console.log("currentQuestion  : ", this.currentQuestion);
@@ -248,7 +246,7 @@ export class QuestionComponent implements OnInit {
       } else {
         this.skipDisable = false;
       }
-      setTimeout(() => {        
+      setTimeout(() => {
         this.rightAnswer = "";
         this.timer = 30;
         this.nextQuestion();
@@ -259,7 +257,6 @@ export class QuestionComponent implements OnInit {
   }
 
   redirectHome() {
-    localStorage.removeItem("user-name");
     this.router.navigate(['/rules']);
   }
 

@@ -24,7 +24,6 @@ export class LanguageComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit(): void {
-    localStorage.getItem("user-name");
   }
 
 

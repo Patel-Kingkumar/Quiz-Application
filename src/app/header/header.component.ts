@@ -12,6 +12,5 @@ export class HeaderComponent implements OnInit {
   constructor(private questionService: QuestionService) { }
 
   ngOnInit(): void {
-    this.name = localStorage.getItem("user-name");
   }
 }

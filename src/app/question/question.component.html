@@ -1,10 +1,10 @@
 <ng-container *ngIf="!dispResult">
     <div class="mt-5 main-question">
         <div class="mt-5 px-3 py-4 text-timer">
-            <h3 class="text">{{ allQuestion[currentQuestion]?.questionText }}</h3>            
+            <h3 class="text">{{ allQuestion[currentQuestion]?.questionText }}</h3>
             <h5 class="timer">Remain Time : {{ timer }}</h5>
         </div>
-        <ul class="option" *ngFor="let option of allQuestion[currentQuestion]?.options">            
+        <ul class="option" *ngFor="let option of allQuestion[currentQuestion]?.options">
             <li class="mt-2">
                 <button class="px-3 py-4 ans-opt" [disabled]="answerDisable" (click)="answer(currentQuestion + 1, option)" [ngClass]="{ 'selected': option.text == selectedOption, 'rightAns': option.text == rightAnswer }">
                     {{ option.text }}
@@ -19,7 +19,7 @@
 
         <div class="btns">
             <button class="btn btn-outline-primary mx-3 prev-btn" (click)="prevQuestion()" [disabled]="currentQuestion === 0">
-                Previous 
+                Previous
             </button>
 
             <p class="fw-semibold fs-4">
@@ -37,7 +37,7 @@
 
 <ng-container *ngIf="dispResult">
     <div class="res">
-        <h3 class="text-center">Hey....! {{ name }} Your Result is : </h3>
+        <h3 class="text-center">Your Result is : </h3>
         <div class="data">
             <div class="one">
                 <p><b>Total Score</b></p>
