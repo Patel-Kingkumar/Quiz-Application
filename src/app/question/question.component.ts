@@ -26,6 +26,7 @@ export class QuestionComponent implements OnInit {
   answerDisable: boolean = false;
   selectAns: boolean = false;
   minTimer: number = 5;
+  hideTimer: boolean = true;
 
   constructor(private router: Router, private render: Renderer2, private questionService: QuestionService, private dialogueService: DialogueService) { }
 
@@ -148,24 +149,24 @@ export class QuestionComponent implements OnInit {
 
   }
 
-  prevQuestion() {
-    this.minTimer = 5;
-    this.answerDisable = true;
-    this.currentQuestion--;
-    console.log("currentQuestion  : ", this.currentQuestion);
-    var allData = Object.values(this.allQuestion[this.currentQuestion]?.options).filter((data: any) => {
-      if (data.correct) {
-        this.rightAnswer = data.text;
-        return data.text;
-      }
-    });
-    this.timer = 30;
-    setTimeout(() => {
-      this.currentQuestion++;
-      this.answerDisable = false;
-      this.rightAnswer = "";
-    }, 5000);
-  }
+  // prevQuestion() {
+  //   this.minTimer = 5;
+  //   this.answerDisable = true;
+  //   this.currentQuestion--;
+  //   console.log("currentQuestion  : ", this.currentQuestion);
+  //   var allData = Object.values(this.allQuestion[this.currentQuestion]?.options).filter((data: any) => {
+  //     if (data.correct) {
+  //       this.rightAnswer = data.text;
+  //       return data.text;
+  //     }
+  //   });
+  //   this.timer = 30;
+  //   setTimeout(() => {
+  //     this.currentQuestion++;
+  //     this.answerDisable = false;
+  //     this.rightAnswer = "";
+  //   }, 5000);
+  // }
 
   skipQuestion() {
     this.dialogueService.confirm('Please confirm....!', 'Do you really want to skip this question ?')
@@ -209,6 +210,7 @@ export class QuestionComponent implements OnInit {
   }
 
   answer(currentQno: number, option: any) {
+    this.hideTimer = false;
     this.minTimer = 5;
     this.selectAns = true;
     this.selectedOption = option.text;
@@ -220,6 +222,7 @@ export class QuestionComponent implements OnInit {
     if (option.correct) {
       this.points += 10;
       this.correctAnswer++;
+      this.hideTimer = true;
       setTimeout(() => {
         this.timer = 30;
         this.nextQuestion();
@@ -228,6 +231,7 @@ export class QuestionComponent implements OnInit {
       this.interval = setInterval(() => {
         if(this.minTimer > 0) {
           this.minTimer--;
+          // this.hideTimer = true;
         }
         if(this.minTimer == 0) {
           clearInterval(this.interval);
@@ -252,8 +256,10 @@ export class QuestionComponent implements OnInit {
         this.nextQuestion();
         this.incorrectAnswer++;
         this.points -= 10;
+        this.hideTimer = true;
       }, 5000);
     }
+
   }
 
   redirectHome() {
