@@ -41,11 +41,19 @@ export class QuestionService {
     return this.http.get("./assets/rdbms.json");
   }
 
+  getSpringBootQuiz() {
+    return this.http.get("./assets/springboot.json");
+  }
+
   getAndroidQuiz() {
     return this.http.get("./assets/android.json");
   }
 
-  getSpringBootQuiz() {
-    return this.http.get("./assets/springboot.json");
+  getKotlinQuiz() {
+    return this.http.get("./assets/kotlin.json");
+  }
+
+  getFlutterBootQuiz() {
+    return this.http.get("./assets/flutter.json");
   }
 }

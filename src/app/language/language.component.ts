@@ -17,8 +17,10 @@ export class LanguageComponent implements OnInit {
     { name: 'angular', description: 'Front-end', image: './assets/images/angular.png'},
     { name: 'react', description: 'Front-end', image: './assets/images/react.png'},
     { name: 'rdbms', description: 'Back-end', image: './assets/images/rdbms.png'},
-    { name: 'android', description: 'mobile-app', image: './assets/images/android.png'},
-    { name: 'springboot', description: 'Back-end', image: './assets/images/spring_boot.png'}
+    { name: 'springboot', description: 'Back-end', image: './assets/images/spring_boot.png'},
+    { name: 'android', description: 'Mobile-app', image: './assets/images/android.png'},
+    { name: 'kotlin', description: 'Mobile-app', image: './assets/images/kotlin.png'},
+    { name: 'flutter', description: 'Mobile-app', image: './assets/images/flutter.png'}
   ]
 
   constructor(private router: Router) { }

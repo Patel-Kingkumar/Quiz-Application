@@ -1,0 +1,68 @@
+{
+  "questions": [
+    {
+        "questionText": "Which of the following is not a valid way to create an object in Kotlin?",
+        "options": [
+            {
+                "text": "AUsing the keyword new",
+                "correct": false
+            },
+            {
+                "text": "Using the keyword object",
+                "correct": false
+            },
+            {
+                "text": "Using the keyword val",
+                "correct": false
+            },
+            {
+                "text": "Using the keyword instance",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "questionText": "What is the difference between a property and a field in Kotlin?",
+        "options": [
+            {
+                "text": "A property is a variable, while a field is a constant",
+                "correct": false
+            },
+            {
+                "text": "A property has a getter and setter, while a field does not",
+                "correct": true
+            },
+            {
+                "text": "A property is a constant, while a field is a variable",
+                "correct": false
+            },
+            {
+                "text": "A property is a method, while a field is a variable",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "questionText": " What is the keyword used to define a type alias in Kotlin?",
+        "options": [
+            {
+                "text": "alias",
+                "correct": false
+            },
+            {
+                "text": "typedef",
+                "correct": false
+            },
+            {
+                "text": "type",
+                "correct": true
+            },
+            {
+                "text": "define",
+                "correct": false
+            }
+        ]
+    }
+
+  ]
+}

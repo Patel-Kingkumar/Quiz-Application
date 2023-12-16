@@ -15,7 +15,6 @@ export class QuestionComponent implements OnInit {
   correctAnswer: number = 0;
   incorrectAnswer: number = 0;
   skipAnswer: number = 0;
-  questionAttempt: number = 0;
   dispResult: boolean = false;
   selectedLangUrl = this.router.url;
   selectedOption: any = "";
@@ -126,6 +125,17 @@ export class QuestionComponent implements OnInit {
       })
     }
 
+    if (this.selectedLangUrl == "/question/springboot") {
+      this.questionService.getSpringBootQuiz().subscribe((data: any) => {
+        this.allQuestion = data.questions.sort(() => 0.5 - Math.random());
+        this.allQuestion = data.questions.map((data: any) => {
+          data.options.sort(() => 0.5 - Math.random())
+          return data;
+        })
+        this.startTimer();
+      })
+    }
+
     if (this.selectedLangUrl == "/question/android") {
       this.questionService.getAndroidQuiz().subscribe((data: any) => {
         this.allQuestion = data.questions.sort(() => 0.5 - Math.random());
@@ -137,8 +147,19 @@ export class QuestionComponent implements OnInit {
       })
     }
 
-    if (this.selectedLangUrl == "/question/springboot") {
-      this.questionService.getSpringBootQuiz().subscribe((data: any) => {
+    if (this.selectedLangUrl == "/question/kotlin") {
+      this.questionService.getKotlinQuiz().subscribe((data: any) => {
+        this.allQuestion = data.questions.sort(() => 0.5 - Math.random());
+        this.allQuestion = data.questions.map((data: any) => {
+          data.options.sort(() => 0.5 - Math.random())
+          return data;
+        })
+        this.startTimer();
+      })
+    }
+
+    if (this.selectedLangUrl == "/question/flutter") {
+      this.questionService.getFlutterBootQuiz().subscribe((data: any) => {
         this.allQuestion = data.questions.sort(() => 0.5 - Math.random());
         this.allQuestion = data.questions.map((data: any) => {
           data.options.sort(() => 0.5 - Math.random())
@@ -226,6 +247,7 @@ export class QuestionComponent implements OnInit {
       this.points += 10;
       this.correctAnswer++;
       this.hideTimer = true;
+      this.answerDisable = false;
       setTimeout(() => {
         this.timer = 30;
         this.nextQuestion();
@@ -259,6 +281,7 @@ export class QuestionComponent implements OnInit {
       setTimeout(() => {
         this.rightAnswer = "";
         this.timer = 30;
+        this.answerDisable = false;
         this.nextQuestion();
         this.incorrectAnswer++;
         this.points -= 10;

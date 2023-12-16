@@ -13,7 +13,7 @@
         </ul>
 
         <div class="wrong-ans">
-            <p class="text-primary fw-semibold fs-5 mx-3" *ngIf="rightAnswer">{{ timerText }} : {{ minTimer }}</p>
+            <p class="fw-semibold fs-5 mx-3" *ngIf="rightAnswer">{{ timerText }} : {{ minTimer }}</p>
             <button class="btn btn-outline-success skip-btn mx-3" (click)="skipQuestion()" [disabled]="skipDisable">
               Skip
           </button>
@@ -42,14 +42,12 @@
                 <p><b>Total Correct Question</b></p>
                 <p><b>Total Wrong Question</b></p>
                 <p><b>Total Skip Question</b></p>
-                <p><b>Total Questions Attempt</b></p>
             </div>
             <div class="two">
                 <p>{{ points }} Points </p>
                 <p>{{ correctAnswer }} </p>
                 <p>{{ incorrectAnswer }} </p>
                 <p>{{ skipAnswer }} </p>
-                <p>{{ questionAttempt }}</p>
             </div>
         </div>
         <button class="btn btn-outline-primary" (click)="redirectHome()">Go Home</button>
