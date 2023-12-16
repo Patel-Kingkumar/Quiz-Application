@@ -14,6 +14,9 @@
 
         <div class="wrong-ans">
             <p class="text-primary fw-semibold fs-5 mx-3" *ngIf="rightAnswer">Next Question : {{ minTimer }}</p>
+            <button class="btn btn-outline-success skip-btn mx-3" (click)="skipQuestion()" [disabled]="skipDisable">
+              Skip
+          </button>
         </div>
 
         <div class="btns">
@@ -24,10 +27,6 @@
             <p class="fw-semibold fs-4">
                 {{ currentQuestion + 1 }} / {{ this.allQuestion.length }}
             </p>
-
-            <button class="btn btn-outline-success skip-btn mx-3" (click)="skipQuestion()" [disabled]="skipDisable">
-                Skip
-            </button>
 
         </div>
     </div>
