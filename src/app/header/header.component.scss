@@ -3,9 +3,11 @@
   flex-direction: row;
   align-items: center;
   gap: 15px;
+  background-color: #e3f7ff;
   & img {
     width: 100px;
     height: 100px;
+    border-radius: 50%;
   }
   & a {
     text-decoration: none;
@@ -14,4 +16,5 @@
 }
 .active {
   font-weight: 500;
+  border-bottom: 3px solid white;
 }
