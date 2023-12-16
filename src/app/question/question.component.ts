@@ -27,6 +27,7 @@ export class QuestionComponent implements OnInit {
   selectAns: boolean = false;
   minTimer: number = 5;
   hideTimer: boolean = true;
+  timerText: string = "Next Question";
 
   constructor(private router: Router, private render: Renderer2, private questionService: QuestionService, private dialogueService: DialogueService) { }
 
@@ -183,6 +184,7 @@ export class QuestionComponent implements OnInit {
 
   showResult() {
     if (this.currentQuestion == this.allQuestion.length) {
+      this.hideTimer = false;
       this.dispResult = true;
     }
   }
@@ -210,6 +212,7 @@ export class QuestionComponent implements OnInit {
   }
 
   answer(currentQno: number, option: any) {
+    this.answerDisable = true;
     this.hideTimer = false;
     this.minTimer = 5;
     this.selectAns = true;
@@ -250,6 +253,9 @@ export class QuestionComponent implements OnInit {
       } else {
         this.skipDisable = false;
       }
+      if (currentQno == this.allQuestion.length) {
+        this.timerText = "Quiz End"
+      }
       setTimeout(() => {
         this.rightAnswer = "";
         this.timer = 30;
@@ -259,7 +265,6 @@ export class QuestionComponent implements OnInit {
         this.hideTimer = true;
       }, 5000);
     }
-
   }
 
   redirectHome() {

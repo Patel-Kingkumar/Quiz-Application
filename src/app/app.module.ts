@@ -14,6 +14,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DialogueComponent } from './dialogue/dialogue.component';
 import { PageNotComponent } from './page-not/page-not.component';
 import { InfoDialogueComponent } from './info-dialogue/info-dialogue.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { InfoDialogueComponent } from './info-dialogue/info-dialogue.component';
     HeaderComponent,
     DialogueComponent,
     PageNotComponent,
-    InfoDialogueComponent
+    InfoDialogueComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

@@ -13,7 +13,7 @@
         </ul>
 
         <div class="wrong-ans">
-            <p class="text-primary fw-semibold fs-5 mx-3" *ngIf="rightAnswer">Next Question : {{ minTimer }}</p>
+            <p class="text-primary fw-semibold fs-5 mx-3" *ngIf="rightAnswer">{{ timerText }} : {{ minTimer }}</p>
             <button class="btn btn-outline-success skip-btn mx-3" (click)="skipQuestion()" [disabled]="skipDisable">
               Skip
           </button>

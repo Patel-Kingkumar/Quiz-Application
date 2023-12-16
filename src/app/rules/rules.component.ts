@@ -17,7 +17,6 @@ export class RulesComponent implements OnInit {
   }
 
   start() {
-      this.router.navigate(["/language"]);
-
+    this.router.navigate(["/language"]);
   }
 }

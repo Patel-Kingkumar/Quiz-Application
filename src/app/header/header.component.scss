@@ -1,11 +1,17 @@
-.container-fluid {
+.main-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
   & img {
     width: 100px;
     height: 100px;
-    background-color: aqua;
+  }
+  & a {
+    text-decoration: none;
+    color: black;
   }
 }
 .active {
-    font-weight: 500;
-    border-bottom: 3px solid black;
+  font-weight: 500;
 }
