@@ -1,0 +1,68 @@
+{
+  "questions": [
+    {
+        "questionText": "Which of the following approach is used by C++?",
+        "options": [
+            {
+                "text": "Top-down",
+                "correct": false
+            },
+            {
+                "text": "Right-left",
+                "correct": false
+            },
+            {
+                "text": "Bottom-up",
+                "correct": true
+            },
+            {
+                "text": "Left-right",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "questionText": "Which of the following correctly declares an array in C++?",
+        "options": [
+            {
+                "text": "array{10};",
+                "correct": false
+            },
+            {
+                "text": "array array[10];",
+                "correct": false
+            },
+            {
+                "text": "int array[10];",
+                "correct": true
+            },
+            {
+                "text": "int array;",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "questionText": "What is Inheritance in C++?",
+        "options": [
+            {
+                "text": "Overloading of classes",
+                "correct": false
+            },
+            {
+                "text": "Classes with same names",
+                "correct": false
+            },
+            {
+                "text": "Wrapping of data into a single class",
+                "correct": false
+            },
+            {
+                "text": "Deriving new classes from existing classes",
+                "correct": true
+            }
+        ]
+    }
+
+  ]
+}

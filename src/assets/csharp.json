@@ -1,0 +1,68 @@
+{
+  "questions": [
+    {
+        "questionText": "Which of the following operator creates a pointer to a variable in C#?",
+        "options": [
+            {
+                "text": "sizeof",
+                "correct": false
+            },
+            {
+                "text": "typeof",
+                "correct": false
+            },
+            {
+                "text": "&",
+                "correct": false
+            },
+            {
+                "text": "*",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "questionText": "Which of the following is a valid method to convert a string to an integer in C#?",
+        "options": [
+            {
+                "text": "string.ToInt32(string)",
+                "correct": false
+            },
+            {
+                "text": "int.Parse(string)",
+                "correct": true
+            },
+            {
+                "text": "int(string)",
+                "correct": false
+            },
+            {
+                "text": "Convert.ToInt32(string)",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "questionText": "What is the correct syntax for declaring a method in C#?",
+        "options": [
+            {
+                "text": "method MyMethod() {}",
+                "correct": false
+            },
+            {
+                "text": "void MyMethod() {}",
+                "correct": true
+            },
+            {
+                "text": "Function MyMethod() {}",
+                "correct": false
+            },
+            {
+                "text": "MyMethod void() {}",
+                "correct": false
+            }
+        ]
+    }
+
+  ]
+}

@@ -21,6 +21,18 @@ export class QuestionService {
     return this.http.get("./assets/javascript.json");
   }
 
+  getCQuiz() {
+    return this.http.get("./assets/c.json");
+  }
+
+  getCPlusPlusQuiz() {
+    return this.http.get("./assets/cplusplus.json");
+  }
+
+  getCSharpQuiz() {
+    return this.http.get("./assets/csharp.json");
+  }
+
   getJavaQuiz() {
     return this.http.get("./assets/java.json");
   }

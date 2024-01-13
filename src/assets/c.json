@@ -1,0 +1,68 @@
+{
+  "questions": [
+    {
+        "questionText": "What is #include <stdio.h>?",
+        "options": [
+            {
+                "text": "File inclusion directive",
+                "correct": false
+            },
+            {
+                "text": "Inclusion directive",
+                "correct": false
+            },
+            {
+                "text": "Preprocessor directive",
+                "correct": true
+            },
+            {
+                "text": "None of these",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "questionText": "In C language, FILE is of which data type?",
+        "options": [
+            {
+                "text": "int",
+                "correct": true
+            },
+            {
+                "text": "char *",
+                "correct": false
+            },
+            {
+                "text": "Listening to DOM events",
+                "correct": false
+            },
+            {
+                "text": "None of these",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "questionText": "What is the precedence of arithmetic operators (from highest to lowest)?",
+        "options": [
+            {
+                "text": "%, +, /, *, –",
+                "correct": false
+            },
+            {
+                "text": "%, *, /, +, –",
+                "correct": true
+            },
+            {
+                "text": "+, -, %, *, /",
+                "correct": false
+            },
+            {
+                "text": "%, +, -, *, /",
+                "correct": false
+            }
+        ]
+    }
+
+  ]
+}

@@ -21,7 +21,7 @@ export class QuestionComponent implements OnInit {
   timer: number = 30;
   interval: any;
   rightAnswer: any = "";
-  skipDisable: any = true;
+  // skipDisable: any = true;
   answerDisable: boolean = false;
   selectAns: boolean = false;
   minTimer: number = 5;
@@ -31,7 +31,7 @@ export class QuestionComponent implements OnInit {
   constructor(private router: Router, private render: Renderer2, private questionService: QuestionService, private dialogueService: DialogueService) { }
 
   ngOnInit(): void {
-    this.skipDisable = false;
+    // this.skipDisable = false;
     this.getAllQuestions();
   }
 
@@ -61,6 +61,39 @@ export class QuestionComponent implements OnInit {
 
     if (this.selectedLangUrl == "/question/js") {
       this.questionService.getJavaScriptQuiz().subscribe((data: any) => {
+        this.allQuestion = data.questions.sort(() => 0.5 - Math.random());
+        this.allQuestion = data.questions.map((data: any) => {
+          data.options.sort(() => 0.5 - Math.random())
+          return data;
+        })
+        this.startTimer();
+      })
+    }
+
+    if (this.selectedLangUrl == "/question/c") {
+      this.questionService.getCQuiz().subscribe((data: any) => {
+        this.allQuestion = data.questions.sort(() => 0.5 - Math.random());
+        this.allQuestion = data.questions.map((data: any) => {
+          data.options.sort(() => 0.5 - Math.random())
+          return data;
+        })
+        this.startTimer();
+      })
+    }
+
+    if (this.selectedLangUrl == "/question/cplusplus") {
+      this.questionService.getCPlusPlusQuiz().subscribe((data: any) => {
+        this.allQuestion = data.questions.sort(() => 0.5 - Math.random());
+        this.allQuestion = data.questions.map((data: any) => {
+          data.options.sort(() => 0.5 - Math.random())
+          return data;
+        })
+        this.startTimer();
+      })
+    }
+
+    if (this.selectedLangUrl == "/question/csharp") {
+      this.questionService.getCSharpQuiz().subscribe((data: any) => {
         this.allQuestion = data.questions.sort(() => 0.5 - Math.random());
         this.allQuestion = data.questions.map((data: any) => {
           data.options.sort(() => 0.5 - Math.random())
@@ -191,7 +224,7 @@ export class QuestionComponent implements OnInit {
   // }
 
   skipQuestion() {
-    this.dialogueService.confirm('Please confirm....!', 'Do you really want to skip this question ?')
+    this.dialogueService.confirm('Please Confirm....!', 'Do you really want to skip this question ?')
       .then((confirmed: any) => {
         if (confirmed) {
           this.currentQuestion++;
@@ -211,7 +244,7 @@ export class QuestionComponent implements OnInit {
   }
 
   nextQuestion() {
-    this.skipDisable = false;
+    // this.skipDisable = false;
     this.currentQuestion++;
   }
 
@@ -270,11 +303,11 @@ export class QuestionComponent implements OnInit {
       });
       this.rightAnswer = allData;
       this.rightAnswer = this.rightAnswer[0]['text'];
-      if(option.text != this.rightAnswer) {
-        this.skipDisable = true;
-      } else {
-        this.skipDisable = false;
-      }
+      // if(option.text != this.rightAnswer) {
+      //   this.skipDisable = true;
+      // } else {
+      //   this.skipDisable = false;
+      // }
       if (currentQno == this.allQuestion.length) {
         this.timerText = "Quiz End"
       }
